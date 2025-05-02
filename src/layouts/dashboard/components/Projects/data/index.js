@@ -79,7 +79,7 @@ export default function data() {
 
     rows: [
       {
-        companies: <Company image={logoXD} name="Material UI XD Version" />,
+        companies: <Company name="Payroll Management" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -102,7 +102,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoAtlassian} name="Add Progress Track" />,
+        companies: <Company name="Workforce Analytics" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -113,7 +113,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $3,000
+            +35%
           </MDTypography>
         ),
         completion: (
@@ -123,7 +123,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoSlack} name="Fix Platform Errors" />,
+        companies: <Company name="Attendance & Leave" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -134,7 +134,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            Not set
+            +17
           </MDTypography>
         ),
         completion: (
@@ -144,7 +144,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoSpotify} name="Launch our Mobile App" />,
+        companies: <Company name="Internal Communications" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -157,7 +157,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $20,500
+            +20
           </MDTypography>
         ),
         completion: (
@@ -167,7 +167,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoJira} name="Add the New Pricing Page" />,
+        companies: <Company name="Recruitment & Hiring" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([[team4, "Jessica Doe"]])}
@@ -175,7 +175,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $500
+            +50
           </MDTypography>
         ),
         completion: (
@@ -185,7 +185,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoInvesion} name="Redesign New Online Shop" />,
+        companies: <Company name="Goal Tracking & Performance" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -196,7 +196,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $2,000
+            58%
           </MDTypography>
         ),
         completion: (

@@ -20,7 +20,8 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDAvatar from "components/MDAvatar";
 import MDBadge from "components/MDBadge";
-
+import { useState } from "react";
+import { MenuItem, Select, FormControl, InputLabel } from "@mui/material";
 // Images
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
@@ -52,19 +53,20 @@ export default function data() {
     columns: [
       { Header: "author", accessor: "author", width: "45%", align: "left" },
       { Header: "function", accessor: "function", align: "left" },
-      { Header: "status", accessor: "status", align: "center" },
-      { Header: "employed", accessor: "employed", align: "center" },
+      { Header: "Request", accessor: "Request", align: "center" },
+      { Header: "Date", accessor: "employed", align: "center" },
       { Header: "action", accessor: "action", align: "center" },
+      { Header: "view", accessor: "view", align: "center" },
     ],
 
     rows: [
       {
         author: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
         function: <Job title="Manager" description="Organization" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
-          </MDBox>
+        Request: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            Vacation Request
+          </MDTypography>
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
@@ -73,17 +75,22 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Validate
+          </MDTypography>
+        ),
+        view: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            View
           </MDTypography>
         ),
       },
       {
         author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
         function: <Job title="Programator" description="Developer" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
-          </MDBox>
+        Request: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            Salary Raise Request
+          </MDTypography>
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
@@ -92,17 +99,22 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Validate
+          </MDTypography>
+        ),
+        view: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            View
           </MDTypography>
         ),
       },
       {
         author: <Author image={team4} name="Laurent Perrier" email="laurent@creative-tim.com" />,
         function: <Job title="Executive" description="Projects" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
-          </MDBox>
+        Request: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            Vacation Request
+          </MDTypography>
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
@@ -111,36 +123,46 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Validate
+          </MDTypography>
+        ),
+        view: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            View
           </MDTypography>
         ),
       },
       {
         author: <Author image={team3} name="Michael Levi" email="michael@creative-tim.com" />,
         function: <Job title="Programator" description="Developer" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
-          </MDBox>
+        Request: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            Vacation Request
+          </MDTypography>
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            24/12/08
+            24/12/08 00:00:00
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Validate
+          </MDTypography>
+        ),
+        view: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            View
           </MDTypography>
         ),
       },
       {
         author: <Author image={team3} name="Richard Gran" email="richard@creative-tim.com" />,
         function: <Job title="Manager" description="Executive" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
-          </MDBox>
+        Request: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            Vacation Request
+          </MDTypography>
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
@@ -149,17 +171,22 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Validate
+          </MDTypography>
+        ),
+        view: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            View
           </MDTypography>
         ),
       },
       {
         author: <Author image={team4} name="Miriam Eric" email="miriam@creative-tim.com" />,
         function: <Job title="Programator" description="Developer" />,
-        status: (
-          <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
-          </MDBox>
+        Request: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            Salary Raise
+          </MDTypography>
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
@@ -168,10 +195,44 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Validate
+          </MDTypography>
+        ),
+        view: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            View
           </MDTypography>
         ),
       },
     ],
   };
+}
+
+function RequestsDropdown() {
+  const requestsData = data().rows;
+
+  // Group by request type
+  const groupedRequests = requestsData.reduce((acc, row) => {
+    const type = row.Request.props.defaultValue || row.Request.props.children;
+    if (!acc[type]) acc[type] = [];
+    acc[type].push(row.author);
+    return acc;
+  }, {});
+
+  return (
+    <MDBox>
+      {Object.entries(groupedRequests).map(([requestType, authors]) => (
+        <FormControl key={requestType} sx={{ m: 2, minWidth: 300 }}>
+          <InputLabel>{requestType}</InputLabel>
+          <Select defaultValue="" label={requestType}>
+            {authors.map((author, index) => (
+              <MenuItem key={index} value={index}>
+                {author}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      ))}
+    </MDBox>
+  );
 }

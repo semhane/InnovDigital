@@ -33,7 +33,6 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 
 // Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
-import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
@@ -48,11 +47,11 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="dark"
                 icon="weekend"
-                title="Bookings"
-                count={281}
+                title="Number of Employees"
+                count="2,300"
                 percentage={{
                   color: "success",
-                  amount: "+55%",
+                  amount: "+13%",
                   label: "than lask week",
                 }}
               />
@@ -62,11 +61,11 @@ function Dashboard() {
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 icon="leaderboard"
-                title="Today's Users"
-                count="2,300"
+                title="Productivity"
+                count="45%"
                 percentage={{
                   color: "success",
-                  amount: "+3%",
+                  amount: "+15%",
                   label: "than last month",
                 }}
               />
@@ -81,8 +80,8 @@ function Dashboard() {
                 count="34k"
                 percentage={{
                   color: "success",
-                  amount: "+1%",
-                  label: "than yesterday",
+                  amount: "+45%",
+                  label: "than Last Month",
                 }}
               />
             </MDBox>
@@ -92,11 +91,11 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
-                title="Followers"
-                count="+91"
+                title="Hires"
+                count="+15"
                 percentage={{
                   color: "success",
-                  amount: "",
+                  amount: "+10%",
                   label: "Just updated",
                 }}
               />
@@ -109,8 +108,12 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="website views"
-                  description="Last Campaign Performance"
+                  title="Daily Sales"
+                  description={
+                    <>
+                      (<strong>+2%</strong>) increase in today sales.
+                    </>
+                  }
                   date="campaign sent 2 days ago"
                   chart={reportsBarChartData}
                 />
@@ -120,12 +123,8 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="daily sales"
-                  description={
-                    <>
-                      (<strong>+15%</strong>) increase in today sales.
-                    </>
-                  }
+                  title="Number Of employees expected to leave"
+                  description="Last Campaign Performance"
                   date="updated 4 min ago"
                   chart={sales}
                 />
@@ -145,14 +144,7 @@ function Dashboard() {
           </Grid>
         </MDBox>
         <MDBox>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={8}>
-              <Projects />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <OrdersOverview />
-            </Grid>
-          </Grid>
+          <Projects />
         </MDBox>
       </MDBox>
       <Footer />

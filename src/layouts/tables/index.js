@@ -53,8 +53,9 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Authors Table
+                  Daily AI Decisions
                 </MDTypography>
+                 <RequestsDropdown />
               </MDBox>
               <MDBox pt={3}>
                 <DataTable
@@ -80,7 +81,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Projects Table
+                  Innovant AI Decisions
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>
