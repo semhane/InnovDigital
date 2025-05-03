@@ -48,7 +48,7 @@ function Cover() {
           textAlign="center"
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Join us today
+            Welcome!
           </MDTypography>
           <MDTypography display="block" variant="button" color="white" my={1}>
             Enter your email and password to register
@@ -59,7 +59,6 @@ function Cover() {
             <MDBox mb={2}>
               <MDInput type="text" label="Name" variant="standard" fullWidth />
             </MDBox>
-            z
             <MDBox mb={2}>
               <MDInput type="password" label="Password" variant="standard" fullWidth />
             </MDBox>
