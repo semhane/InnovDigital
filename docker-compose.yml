@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   unified:
-    build: 
-      context: .
-      dockerfile: docker/unified/Dockerfile
+    platform: linux/amd64
+    build: ./docker/unified 
+    context: .
+    dockerfile: docker/unified/Dockerfile
     ports:
       - "8000:8000"
     environment:
