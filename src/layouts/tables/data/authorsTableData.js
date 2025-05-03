@@ -21,6 +21,8 @@ import MDTypography from "components/MDTypography";
 import MDAvatar from "components/MDAvatar";
 import MDBadge from "components/MDBadge";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { MenuItem, Select, FormControl, InputLabel } from "@mui/material";
 // Images
 import team2 from "assets/images/team-2.jpg";
@@ -74,12 +76,24 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Validate
+          <MDTypography
+            component="span"
+            variant="caption"
+            fontWeight="medium"
+            color="success"
+            sx={{ cursor: "pointer" }}
+          >
+            validate
           </MDTypography>
         ),
         view: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component={Link}
+            to="/billing" // Replace with your actual route
+            variant="caption"
+            color="info"
+            fontWeight="medium"
+          >
             View
           </MDTypography>
         ),
@@ -98,12 +112,24 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Validate
+          <MDTypography
+            component="span"
+            variant="caption"
+            fontWeight="medium"
+            color="error"
+            sx={{ cursor: "pointer" }}
+          >
+            reject
           </MDTypography>
         ),
         view: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component={Link}
+            to="/billing" // Replace with your actual route
+            variant="caption"
+            color="info"
+            fontWeight="medium"
+          >
             View
           </MDTypography>
         ),
@@ -122,12 +148,24 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Validate
+          <MDTypography
+            component="span"
+            variant="caption"
+            fontWeight="medium"
+            color="error"
+            sx={{ cursor: "pointer" }}
+          >
+            reject
           </MDTypography>
         ),
         view: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component={Link}
+            to="/billing" // Replace with your actual route
+            variant="caption"
+            color="info"
+            fontWeight="medium"
+          >
             View
           </MDTypography>
         ),
@@ -147,11 +185,17 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Validate
+            pending
           </MDTypography>
         ),
         view: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component={Link}
+            to="/billing" // Replace with your actual route
+            variant="caption"
+            color="info"
+            fontWeight="medium"
+          >
             View
           </MDTypography>
         ),
@@ -170,12 +214,24 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Validate
+          <MDTypography
+            component="span"
+            variant="caption"
+            fontWeight="medium"
+            color="success"
+            sx={{ cursor: "pointer" }}
+          >
+            accept
           </MDTypography>
         ),
         view: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component={Link}
+            to="/billing" // Replace with your actual route
+            variant="caption"
+            color="info"
+            fontWeight="medium"
+          >
             View
           </MDTypography>
         ),
@@ -195,11 +251,17 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Validate
+            pending
           </MDTypography>
         ),
         view: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component={Link}
+            to="/billing" // Replace with your actual route
+            variant="caption"
+            color="info"
+            fontWeight="medium"
+          >
             View
           </MDTypography>
         ),
